@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "@/context/AuthContext";
+import { FloatingAI } from "@/components/FloatingAI";
 
 // Pages
 import Index from "./pages/Index";
@@ -27,6 +28,7 @@ const App = () => (
       <TooltipProvider>
         <Toaster />
         <Sonner />
+        <FloatingAI />
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Index />} />
